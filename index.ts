@@ -1,10 +1,13 @@
 class User {
-  id: number;
-  name: string;
+  constructor(private id: number, public name: string) {}
 }
 
-const user: User = new User();
+const user: User = new User(34, 'name');
 
-user.id;
+//console.log(user.id);
 
-console.log(user);
+function multiply(a: number, b: number): number {
+  return a * b;
+}
+
+console.log(multiply(3, 'ciao'));
